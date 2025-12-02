@@ -48,7 +48,7 @@ export default function Navigation() {
       {/* Mobile menu button */}
       <button
         onClick={toggleMenu}
-        className="fixed top-4 right-4 z-50 md:hidden bg-gray-800 p-2 rounded-lg border border-gray-700 hover:bg-gray-700 transition"
+        className="fixed top-6 right-6 z-50 md:hidden bg-gray-800 p-2 rounded-lg border border-gray-700 hover:bg-gray-700 transition"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
