@@ -61,8 +61,8 @@ export default function Profile() {
                 key={job.role}
                 className="bg-gray-900 border border-gray-800 rounded-lg p-4"
               >
-                <h3 className="font-semibold text-gray-900">{job.role}</h3>
-                <p className="text-gray-600 text-sm">{job.company}</p>
+                <h3 className="font-semibold text-gray-100">{job.role}</h3>
+                <p className="text-gray-400 text-sm">{job.company}</p>
                 <p className="text-gray-500 text-xs mt-1">{job.duration}</p>
               </div>
             ))}
@@ -92,8 +92,8 @@ export default function Profile() {
                 key={index}
                 className="bg-gray-900 border border-gray-800 rounded-lg p-4"
               >
-                <h3 className="font-semibold text-gray-900">{edu.degree}</h3>
-                <p className="text-gray-600 text-sm">{edu.school}</p>
+                <h3 className="font-semibold text-gray-100">{edu.degree}</h3>
+                <p className="text-gray-400 text-sm">{edu.school}</p>
                 <p className="text-gray-500 text-xs mt-1">{edu.year}</p>
               </div>
             ))}

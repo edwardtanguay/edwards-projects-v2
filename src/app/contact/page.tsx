@@ -51,8 +51,8 @@ export default function Contact() {
                 <Mail size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                <p className="text-gray-600">hello@example.com</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Email</h3>
+                <p className="text-gray-400">hello@example.com</p>
               </div>
             </div>
 
@@ -61,8 +61,8 @@ export default function Contact() {
                 <Phone size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Phone</h3>
+                <p className="text-gray-400">+1 (555) 123-4567</p>
               </div>
             </div>
 
@@ -71,8 +71,8 @@ export default function Contact() {
                 <MapPin size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                <p className="text-gray-600">123 Business Street, Suite 100</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Address</h3>
+                <p className="text-gray-400">123 Business Street, Suite 100</p>
               </div>
             </div>
           </div>
