@@ -48,10 +48,10 @@ export default function Services() {
     <div className="p-8 md:p-12 max-w-6xl">
       <div className="space-y-12">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Services
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-400">
             Comprehensive solutions tailored to your needs.
           </p>
         </div>
@@ -60,13 +60,13 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-gray-50 border border-gray-300 rounded-lg p-6 hover:border-gray-400 transition"
+              className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-gray-600 transition"
             >
-              <div className="text-gray-700 mb-3">{service.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              <div className="text-gray-400 mb-3">{service.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-100 mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-400 text-sm leading-relaxed">
                 {service.description}
               </p>
             </div>
