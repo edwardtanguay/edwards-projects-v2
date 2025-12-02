@@ -58,17 +58,17 @@ export default function Settings() {
     <div className="p-8 md:p-12 max-w-4xl">
       <div className="space-y-8">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Settings
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-400">
             Customize your experience and preferences.
           </p>
         </div>
 
         {/* Preferences */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6">
             Preferences
           </h2>
           <div className="space-y-4">
@@ -88,14 +88,12 @@ export default function Settings() {
             ].map((pref) => (
               <div
                 key={pref.label}
-                className="flex items-center justify-between bg-gray-50 border border-gray-300 rounded-lg p-4"
+                className="flex items-center justify-between bg-gray-900 border border-gray-800 rounded-lg p-4"
               >
-                <span className="font-medium text-gray-900">{pref.label}</span>
+                <span className="font-medium text-gray-100">{pref.label}</span>
                 <button
                   onClick={() => handleToggle(pref.key)}
-                  className={`relative w-12 h-6 rounded-full transition ${toggleStates[pref.key]
-                      ? "bg-gray-700"
-                      : "bg-gray-300"
+                  className={`relative w-12 h-6 rounded-full transition ${toggleStates[pref.key] ? "bg-gray-600" : "bg-gray-700"
                     }`}
                 >
                   <div
@@ -110,19 +108,19 @@ export default function Settings() {
 
         {/* Settings Categories */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6">
             Settings Categories
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {settings.map((setting, index) => (
               <button
                 key={index}
-                className="flex items-start gap-4 bg-gray-50 border border-gray-300 rounded-lg p-4 hover:border-gray-400 transition text-left"
+                className="flex items-start gap-4 bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition text-left"
               >
-                <div className="text-gray-700 flex-shrink-0">{setting.icon}</div>
+                <div className="text-gray-400 flex-shrink-0">{setting.icon}</div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">{setting.title}</h3>
-                  <p className="text-gray-600 text-sm">{setting.description}</p>
+                  <h3 className="font-semibold text-gray-100">{setting.title}</h3>
+                  <p className="text-gray-400 text-sm">{setting.description}</p>
                 </div>
               </button>
             ))}
@@ -130,16 +128,16 @@ export default function Settings() {
         </section>
 
         {/* Danger Zone */}
-        <section className="border-t border-gray-300 pt-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        <section className="border-t border-gray-800 pt-8">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6">
             Danger Zone
           </h2>
-          <div className="bg-gray-50 border border-gray-400 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-2">Delete Account</h3>
-            <p className="text-gray-600 text-sm mb-4">
+          <div className="bg-gray-900 border border-gray-700 rounded-lg p-6">
+            <h3 className="font-semibold text-gray-100 mb-2">Delete Account</h3>
+            <p className="text-gray-400 text-sm mb-4">
               Once you delete your account, there is no going back. Please be certain.
             </p>
-            <button className="px-4 py-2 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition">
+            <button className="px-4 py-2 bg-red-900/50 text-red-200 border border-red-900 font-medium rounded-lg hover:bg-red-900/70 transition">
               Delete Account
             </button>
           </div>

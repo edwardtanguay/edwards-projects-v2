@@ -29,10 +29,10 @@ export default function Contact() {
     <div className="p-8 md:p-12 max-w-4xl">
       <div className="space-y-12">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Contact
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-400">
             Get in touch with us. We'd love to hear from you.
           </p>
         </div>
@@ -41,38 +41,38 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+              <h2 className="text-2xl font-semibold text-gray-100 mb-6">
                 Contact Information
               </h2>
             </div>
 
             <div className="flex gap-4">
-              <div className="text-gray-700 flex-shrink-0">
+              <div className="text-gray-400 flex-shrink-0">
                 <Mail size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                <p className="text-gray-600">hello@example.com</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Email</h3>
+                <p className="text-gray-400">hello@example.com</p>
               </div>
             </div>
 
             <div className="flex gap-4">
-              <div className="text-gray-700 flex-shrink-0">
+              <div className="text-gray-400 flex-shrink-0">
                 <Phone size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Phone</h3>
+                <p className="text-gray-400">+1 (555) 123-4567</p>
               </div>
             </div>
 
             <div className="flex gap-4">
-              <div className="text-gray-700 flex-shrink-0">
+              <div className="text-gray-400 flex-shrink-0">
                 <MapPin size={24} />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                <p className="text-gray-600">123 Business Street, Suite 100</p>
+                <h3 className="font-semibold text-gray-100 mb-1">Address</h3>
+                <p className="text-gray-400">123 Business Street, Suite 100</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-100 mb-1">
                   Name
                 </label>
                 <input
@@ -91,13 +91,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 bg-white text-gray-900"
+                  className="w-full px-4 py-2 border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 bg-gray-900 text-gray-100"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-100 mb-1">
                   Email
                 </label>
                 <input
@@ -107,13 +107,13 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 bg-white text-gray-900"
+                  className="w-full px-4 py-2 border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 bg-gray-900 text-gray-100"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-100 mb-1">
                   Message
                 </label>
                 <textarea
@@ -123,21 +123,21 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 bg-white text-gray-900 resize-none"
+                  className="w-full px-4 py-2 border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 bg-gray-900 text-gray-100 resize-none"
                   placeholder="Your message..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-lg transition flex items-center justify-center gap-2"
+                className="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition flex items-center justify-center gap-2"
               >
                 <Send size={18} />
                 Send Message
               </button>
 
               {submitted && (
-                <div className="bg-gray-100 border border-gray-400 text-gray-900 px-4 py-3 rounded-lg">
+                <div className="bg-gray-800 border border-gray-700 text-gray-100 px-4 py-3 rounded-lg">
                   Thank you! Your message has been sent.
                 </div>
               )}

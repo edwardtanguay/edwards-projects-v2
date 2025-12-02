@@ -5,26 +5,26 @@ export default function Profile() {
     <div className="p-8 md:p-12 max-w-4xl">
       <div className="space-y-8">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Profile
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-400">
             Learn about our team and expertise.
           </p>
         </div>
 
         {/* Profile Card */}
-        <div className="bg-gray-50 border border-gray-300 rounded-lg p-8">
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-8">
           <div className="flex items-start gap-6">
-            <div className="w-24 h-24 bg-gray-300 rounded-lg flex-shrink-0" />
+            <div className="w-24 h-24 bg-gray-700 rounded-lg flex-shrink-0" />
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-1">
+              <h2 className="text-2xl font-bold text-gray-100 mb-1">
                 Professional Team
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-400 mb-4">
                 Dedicated to delivering excellence
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 With over a decade of combined experience in web development and
                 digital solutions, our team is committed to bringing your vision
                 to life.
@@ -35,7 +35,7 @@ export default function Profile() {
 
         {/* Experience */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6 flex items-center gap-2">
             <Briefcase size={24} />
             Experience
           </h2>
@@ -59,10 +59,10 @@ export default function Profile() {
             ].map((job) => (
               <div
                 key={job.role}
-                className="bg-gray-50 border border-gray-300 rounded-lg p-4"
+                className="bg-gray-900 border border-gray-800 rounded-lg p-4"
               >
-                <h3 className="font-semibold text-gray-900">{job.role}</h3>
-                <p className="text-gray-600 text-sm">{job.company}</p>
+                <h3 className="font-semibold text-gray-100">{job.role}</h3>
+                <p className="text-gray-400 text-sm">{job.company}</p>
                 <p className="text-gray-500 text-xs mt-1">{job.duration}</p>
               </div>
             ))}
@@ -71,7 +71,7 @@ export default function Profile() {
 
         {/* Education */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6 flex items-center gap-2">
             <GraduationCap size={24} />
             Education
           </h2>
@@ -90,10 +90,10 @@ export default function Profile() {
             ].map((edu, index) => (
               <div
                 key={index}
-                className="bg-gray-50 border border-gray-300 rounded-lg p-4"
+                className="bg-gray-900 border border-gray-800 rounded-lg p-4"
               >
-                <h3 className="font-semibold text-gray-900">{edu.degree}</h3>
-                <p className="text-gray-600 text-sm">{edu.school}</p>
+                <h3 className="font-semibold text-gray-100">{edu.degree}</h3>
+                <p className="text-gray-400 text-sm">{edu.school}</p>
                 <p className="text-gray-500 text-xs mt-1">{edu.year}</p>
               </div>
             ))}
@@ -102,7 +102,7 @@ export default function Profile() {
 
         {/* Skills */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-semibold text-gray-100 mb-6 flex items-center gap-2">
             <Award size={24} />
             Skills
           </h2>
@@ -117,7 +117,7 @@ export default function Profile() {
             ].map((skill) => (
               <div
                 key={skill}
-                className="bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-gray-900 font-medium"
+                className="bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-gray-100 font-medium"
               >
                 {skill}
               </div>
