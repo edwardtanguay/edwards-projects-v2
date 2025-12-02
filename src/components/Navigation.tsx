@@ -1,0 +1,92 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import {
+  Home,
+  Info,
+  Briefcase,
+  Mail,
+  Settings,
+  User,
+  UserCircle,
+  Building,
+  Menu,
+  X,
+} from "lucide-react";
+
+interface NavItem {
+  label: string;
+  href: string;
+  icon: React.ReactNode;
+}
+
+const navItems: NavItem[] = [
+  { label: "Home", href: "/", icon: <Home size={20} /> },
+  { label: "About", href: "/about", icon: <Info size={20} /> },
+  { label: "Company", href: "/company", icon: <Building size={20} /> },
+  { label: "Services", href: "/services", icon: <Briefcase size={20} /> },
+  { label: "Contact", href: "/contact", icon: <Mail size={20} /> },
+  { label: "Profile", href: "/profile", icon: <User size={20} /> },
+  { label: "Personal", href: "/personal", icon: <UserCircle size={20} /> },
+  { label: "Settings", href: "/settings", icon: <Settings size={20} /> },
+];
+
+export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const isActive = (href: string) => {
+    return pathname === href ? "bg-gray-200 text-gray-900" : "text-gray-600";
+  };
+
+  return (
+    <>
+      {/* Mobile menu button */}
+      <button
+        onClick={toggleMenu}
+        className="fixed top-4 right-4 z-50 md:hidden bg-gray-100 p-2 rounded-lg border border-gray-300 hover:bg-gray-200 transition"
+      >
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/20 md:hidden z-30"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Sidebar Navigation */}
+      <aside
+        className={`fixed md:static inset-y-0 right-0 md:left-0 z-40 w-64 bg-gray-50 border-r border-gray-300 transition-transform duration-300 ease-out md:translate-x-0 ${isOpen ? "translate-x-0" : "translate-x-full"
+          } flex flex-col pt-16 md:pt-0`}
+      >
+        <nav className="flex-1 px-4 py-8 space-y-2">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition hover:bg-gray-200 ${isActive(
+                item.href
+              )}`}
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </Link>
+          ))}
+        </nav>
+
+        {/* Footer */}
+        <div className="border-t border-gray-300 px-4 py-4 text-xs text-gray-500">
+          <p>© 2025 Professional Site</p>
+        </div>
+      </aside>
+    </>
+  );
+}
