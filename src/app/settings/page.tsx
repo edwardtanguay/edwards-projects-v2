@@ -93,9 +93,7 @@ export default function Settings() {
                 <span className="font-medium text-gray-100">{pref.label}</span>
                 <button
                   onClick={() => handleToggle(pref.key)}
-                  className={`relative w-12 h-6 rounded-full transition ${toggleStates[pref.key]
-                    ? "bg-gray-700"
-                    : "bg-gray-300"
+                  className={`relative w-12 h-6 rounded-full transition ${toggleStates[pref.key] ? "bg-gray-600" : "bg-gray-700"
                     }`}
                 >
                   <div
@@ -121,8 +119,8 @@ export default function Settings() {
               >
                 <div className="text-gray-400 flex-shrink-0">{setting.icon}</div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">{setting.title}</h3>
-                  <p className="text-gray-600 text-sm">{setting.description}</p>
+                  <h3 className="font-semibold text-gray-100">{setting.title}</h3>
+                  <p className="text-gray-400 text-sm">{setting.description}</p>
                 </div>
               </button>
             ))}
@@ -130,13 +128,13 @@ export default function Settings() {
         </section>
 
         {/* Danger Zone */}
-        <section className="border-t border-gray-300 pt-8">
+        <section className="border-t border-gray-800 pt-8">
           <h2 className="text-2xl font-semibold text-gray-100 mb-6">
             Danger Zone
           </h2>
-          <div className="bg-gray-50 border border-gray-400 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-2">Delete Account</h3>
-            <p className="text-gray-600 text-sm mb-4">
+          <div className="bg-gray-900 border border-gray-700 rounded-lg p-6">
+            <h3 className="font-semibold text-gray-100 mb-2">Delete Account</h3>
+            <p className="text-gray-400 text-sm mb-4">
               Once you delete your account, there is no going back. Please be certain.
             </p>
             <button className="px-4 py-2 bg-red-900/50 text-red-200 border border-red-900 font-medium rounded-lg hover:bg-red-900/70 transition">
