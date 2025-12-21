@@ -1,4 +1,5 @@
 import { Task as TaskData } from "../types";
+import { Check } from "lucide-react";
 
 export default function Task({ task }: { task: TaskData }) {
 	return (
@@ -33,13 +34,16 @@ export default function Task({ task }: { task: TaskData }) {
 						</p>
 					)}
 					{task.stage === "finished" && task.endDateTime && (
-						<p className="text-sm text-gray-300">
-							Finished on{" "}
-							<span className="text-emerald-300 font-medium">
-								{new Date(task.endDateTime).toLocaleDateString("en-US", {
-									month: "short",
-									day: "numeric",
-								})}
+						<p className="text-sm bg-black text-gray-300 flex items-center gap-2">
+							<Check className="w-4 h-4 text-emerald-500" />
+							<span>
+								Finished on{" "}
+								<span className="text-white font-medium">
+									{new Date(task.endDateTime).toLocaleDateString("en-US", {
+										month: "short",
+										day: "numeric",
+									})}
+								</span>
 							</span>
 						</p>
 					)}
