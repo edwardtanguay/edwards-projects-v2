@@ -80,7 +80,7 @@ export default function Navigation() {
 
 				{/* Footer */}
 				<div className="border-t border-gray-800 px-4 py-4 text-xs text-gray-500">
-					<p>© 2025 Professional Site</p>
+					<p>Made by <a href="https://tanguay.info" className="underline" target="_blank">Edward Tanguay</a></p>
 				</div>
 			</aside>
 		</>
