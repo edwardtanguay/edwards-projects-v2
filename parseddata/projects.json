@@ -1,0 +1,42 @@
+[
+	{
+		"suuid": "mu2XsN",
+		"idCode": "edwards-projects",
+		"title": "Edward's Projects",
+		"status": "creating basic parsing of text file that shows project information",
+		"mode": "active",
+		"repo": "https://github.com/edwardtanguay/edwards-projects",
+		"live": "https://edwards-projects.vercel.app",
+		"mainImage": "",
+		"categories": [
+			{
+				"idCode": "live",
+				"shortInfo": "this is my site that shows all tech projects I'm working on with links to repositories, many useful showcases and templates"
+			},
+			{
+				"idCode": "active",
+				"shortInfo": "currently creating basic parsing of text files that show project information"
+			}
+		]
+	},
+	{
+		"suuid": "YpJTjQ",
+		"idCode": "comprehensible-output",
+		"title": "Comprehensible Input",
+		"status": "(fill in status)",
+		"mode": "open",
+		"repo": "https://github.com/edwardtanguay/comprehensible-output",
+		"live": "https://comprehensible-output.vercel.app",
+		"mainImage": "",
+		"categories": [
+			{
+				"idCode": "live",
+				"shortInfo": "my main language-learning site, each day I have AI create me a story based on the phrases that I looked up the day before in Google Translate, then I read it aloud, currently learning French, Italian and Dutch"
+			},
+			{
+				"idCode": "active",
+				"shortInfo": "I update this site daily, recording an audio of a story created by AI based on phrases I looked up recently in Google Translate"
+			}
+		]
+	}
+]
