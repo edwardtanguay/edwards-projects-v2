@@ -6,7 +6,7 @@ export default function About() {
 					<h1 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
 						About
 					</h1>
-					<p className="text-lg text-gray-400 leading-relaxed">
+					<div className="text-lg text-gray-400 leading-relaxed">
 						<p className="mb-3">
 							This site contains all the projects I am working on.
 						</p>
@@ -32,7 +32,7 @@ export default function About() {
 								</a>
 							</div>
 						</div>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>
