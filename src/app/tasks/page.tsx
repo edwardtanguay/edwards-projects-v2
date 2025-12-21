@@ -1,20 +1,3 @@
-import _projects from "../../../parseddata/projects.json";
-
-const activeProjects = _projects.filter((project) =>
-  project.categories.some((category) => category.idCode === "active")
-);
-const upcomingProjects = _projects.filter((project) =>
-  project.categories.some((category) => category.idCode === "upcoming")
-);
-const liveProjects = _projects.filter((project) =>
-  project.categories.some((category) => category.idCode === "live")
-);
-const showcaseProjects = _projects.filter((project) =>
-  project.categories.some((category) => category.idCode === "showcase")
-);
-const startProjects = _projects.filter((project) =>
-  project.categories.some((category) => category.idCode === "start")
-);
 
 export default function Company() {
 	return (
