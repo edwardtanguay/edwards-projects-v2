@@ -26,11 +26,6 @@ const navItems: NavItem[] = [
 	{ label: "Projects", href: "/", icon: <Home size={20} /> },
 	{ label: "Tasks", href: "/tasks", icon: <Building size={20} /> },
 	{ label: "About", href: "/about", icon: <Info size={20} /> },
-	{ label: "Services", href: "/services", icon: <Briefcase size={20} /> },
-	{ label: "Contact", href: "/contact", icon: <Mail size={20} /> },
-	{ label: "Profile", href: "/profile", icon: <User size={20} /> },
-	{ label: "Personal", href: "/personal", icon: <UserCircle size={20} /> },
-	{ label: "Settings", href: "/settings", icon: <Settings size={20} /> },
 ];
 
 export default function Navigation() {
