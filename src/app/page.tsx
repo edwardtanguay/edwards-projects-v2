@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowRight } from "lucide-react";
+import _projects from "../../parseddata/projects.json";
 
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
               Responsive Design
             </h2>
             <p className="text-gray-400 text-sm">
-              Works seamlessly on mobile, tablet, and desktop devices with a
-              responsive hamburger menu.
+currently {_projects.length} projects are tracked on this site, with more to come as I continue to develop and refine my portfolio.
+
             </p>
           </div>
 
