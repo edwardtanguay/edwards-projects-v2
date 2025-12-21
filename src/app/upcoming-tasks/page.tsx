@@ -1,4 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import tasks from "../../../parseddata/tasks.json";
+import Task from "../../components/Task";
+
+const upcomingTasks = tasks.filter(task => task.stage === "upcoming").sort((a, b) => b.rank - a.rank);
+
 
 export default function Company() {
 	return (
@@ -11,6 +16,12 @@ export default function Company() {
 					<p className="text-lg text-gray-400 leading-relaxed">
 					These are the tasks I plan to do next in various software projects.
 					</p>
+				</div>
+
+				<div className="space-y-4">
+					{upcomingTasks.map((task) => (
+						<Task key={task.suuid} task={task} />
+					))}
 				</div>
 
 			</div>
