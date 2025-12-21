@@ -6,11 +6,7 @@ import { usePathname } from "next/navigation";
 import {
 	Home,
 	Info,
-	Briefcase,
-	Mail,
-	Settings,
-	User,
-	UserCircle,
+	Activity,
 	Building,
 	Menu,
 	X,
@@ -24,7 +20,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
 	{ label: "Home", href: "/", icon: <Home size={20} /> },
-	{ label: "Active Projects", href: "/active-projects", icon: <Home size={20} /> },
+	{ label: "Active Projects", href: "/active-projects", icon: <Activity size={20} /> },
 	{ label: "Tasks", href: "/tasks", icon: <Building size={20} /> },
 	{ label: "About", href: "/about", icon: <Info size={20} /> },
 ];
