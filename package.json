@@ -6,7 +6,12 @@
     "dev": "next dev -p 3322",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "cp": "cd scripts && python create_page.py",
+    "pd": "cd scripts && python parse_data.py",
+    "learn": "cd scripts && python cli_learn.py",
+    "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/edwards-projects-$(date +%F-%H-%M-%S).zip\"'"
   },
   "dependencies": {
     "lucide-react": "^0.554.0",
