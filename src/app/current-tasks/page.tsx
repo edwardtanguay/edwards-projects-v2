@@ -40,6 +40,19 @@ export default function Company() {
 									{task.projectIdCode}
 								</span>
 							</p>
+							{task.beginDateTime && (
+								<p className="text-sm text-gray-400">
+									Started on{" "}
+									<span className="text-gray-300 font-medium">
+										{new Date(
+											task.beginDateTime
+										).toLocaleDateString("en-US", {
+											month: "short",
+											day: "numeric",
+										})}
+									</span>
+								</p>
+							)}
 						</div>
 					))}
 				</div>
