@@ -32,37 +32,25 @@ export default function Company() {
 				<div className="space-y-6">
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-						Active Projects
+						Current Tasks:
 						</h2>
 						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-						Upcoming Projects
+						Upcoming Tasks:
 						</h2>
 						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-						Live and in Production
+						Finished Tasks:
 						</h2>
 						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 					
-					<section>
-						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-						Showcases
-						</h2>
-						<p className="text-gray-400 leading-relaxed">test</p>
-					</section>
-					<section>
-						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-						Starts
-						</h2>
-						<p className="text-gray-400 leading-relaxed">test</p>
-					</section>
 				</div>
 			</div>
 		</div>
