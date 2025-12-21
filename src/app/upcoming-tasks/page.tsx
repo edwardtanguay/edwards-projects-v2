@@ -14,7 +14,7 @@ export default function Company() {
 						Upcoming Tasks
 					</h1>
 					<p className="text-lg text-gray-400 leading-relaxed">
-					These are the tasks I plan to do next in various software projects.
+					These are the tasks I plan to do next in various software projects. Rank is 5 = highest priority and 0 = lowest priority.
 					</p>
 				</div>
 

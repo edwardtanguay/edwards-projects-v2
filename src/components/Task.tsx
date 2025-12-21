@@ -1,10 +1,13 @@
 
+
 interface TaskData {
 	suuid: string;
 	title: string;
 	projectIdCode: string;
 	beginDateTime?: string;
 	kind: string;
+	stage: string;
+	rank?: number;
 }
 
 interface TaskProps {
@@ -27,17 +30,20 @@ export default function Task({ task }: TaskProps) {
 							{task.projectIdCode}
 						</span>
 					</p>
-					{task.beginDateTime && (
+					{task.stage === "current" && task.beginDateTime && (
 						<p className="text-sm text-gray-300">
 							Started on{" "}
 							<span className="text-emerald-300 font-medium">
-								{new Date(
-									task.beginDateTime
-								).toLocaleDateString("en-US", {
+								{new Date(task.beginDateTime).toLocaleDateString("en-US", {
 									month: "short",
 									day: "numeric",
 								})}
 							</span>
+						</p>
+					)}
+					{task.stage === "upcoming" && task.rank && (
+						<p className="text-sm text-gray-300">
+							Rank: <span className="text-red-300 font-medium">{task.rank}</span>
 						</p>
 					)}
 				</div>
