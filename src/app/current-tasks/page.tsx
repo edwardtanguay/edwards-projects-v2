@@ -1,4 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
+import tasks from "../../../parseddata/tasks.json";
+
+const currentTasks = [
+	...tasks.filter((task) => task.stage === "current"),
+	...tasks.filter((task) => task.stage === "paused"),
+];
 
 export default function Company() {
 	return (
@@ -9,10 +15,34 @@ export default function Company() {
 						Current Tasks
 					</h1>
 					<p className="text-lg text-gray-400 leading-relaxed">
-					I'm currently working on the following tasks from my software projects.
+						I'm currently working on the following tasks from my
+						software projects.
 					</p>
 				</div>
 
+				<div className="space-y-4">
+					{currentTasks.map((task) => (
+						<div
+							key={task.suuid}
+							className="bg-gray-800 border border-gray-700 rounded-lg p-4 hover:border-gray-600 transition"
+						>
+							<div className="flex items-start justify-between mb-2">
+								<h2 className="text-xl font-semibold text-gray-100">
+									{task.title}
+								</h2>
+								<span className="inline-block px-3 py-1 text-xs font-medium bg-blue-900 text-blue-200 rounded">
+									{task.kind}
+								</span>
+							</div>
+							<p className="text-sm text-gray-400">
+								Project:{" "}
+								<span className="text-gray-300 font-medium">
+									{task.projectIdCode}
+								</span>
+							</p>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
