@@ -15,7 +15,7 @@ export default function Company() {
 						Current Tasks
 					</h1>
 					<p className="text-lg text-gray-300 leading-relaxed">
-						I'm currently working on the following tasks from my
+						I'm currently working on the following tasks from various 
 						software projects.
 					</p>
 				</div>
