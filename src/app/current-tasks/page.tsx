@@ -30,7 +30,7 @@ export default function Company() {
 								<h2 className="text-xl font-semibold text-gray-100">
 									{task.title}
 								</h2>
-								<span className="inline-block px-3 py-1 text-xs font-medium bg-blue-900 text-blue-200 rounded">
+								<span className="inline-block px-2 py-1 text-xs font-medium bg-gray-700 text-gray-300 border-l-2 border-blue-500">
 									{task.kind}
 								</span>
 							</div>
