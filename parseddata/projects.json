@@ -1,9 +1,9 @@
 [
 	{
-		"suuid": "mu2XsN",
+		"suuid": "WvBuzX",
 		"idCode": "edwards-projects",
 		"title": "Edward's Projects",
-		"status": "creating basic parsing of text file that shows project information",
+		"status": "I'm currently converting this site from a gray design in Nuxt to a modern dark design in Next.js.",
 		"mode": "active",
 		"repo": "https://github.com/edwardtanguay/edwards-projects",
 		"live": "https://edwards-projects.vercel.app",
@@ -20,10 +20,10 @@
 		]
 	},
 	{
-		"suuid": "YpJTjQ",
+		"suuid": "AGbtIz",
 		"idCode": "comprehensible-output",
 		"title": "Comprehensible Input",
-		"status": "(fill in status)",
+		"status": "I currently use this site everyday, creating a story with AI based on phrases I have looked up the previous day in Google translate. I'm currently building in features to improve the site and the ability to learn languages more efficiently.",
 		"mode": "open",
 		"repo": "https://github.com/edwardtanguay/comprehensible-output",
 		"live": "https://comprehensible-output.vercel.app",
