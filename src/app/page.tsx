@@ -29,16 +29,17 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-100 mb-2">
-              Responsive Design
-            </h2>
-            <p className="text-gray-400 text-sm">
-              currently {activeProjects.length} projects are tracked on this site, with more to come as I continue to develop and refine my portfolio.
-
-            </p>
-          </div>
-
+          {activeProjects.map((project) => (
+            <div
+              key={project.suuid ?? project.idCode}
+              className="bg-gray-900 border border-gray-800 rounded-lg p-6"
+            >
+              <h2 className="text-lg font-semibold text-gray-100 mb-2">
+                {project.title}
+              </h2>
+              <p className="text-gray-400 text-sm">{project.status}</p>
+            </div>
+          ))}
         </div>
 
       </div>
