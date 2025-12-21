@@ -1,6 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import _projects from "../../parseddata/projects.json";
 
+const activeProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "active")
+);
+const upcomingProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "upcoming")
+);
+const liveProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "live")
+);
+const showcaseProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "showcase")
+);
+const startProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "start")
+);
+
 export default function Home() {
   return (
     <div className="p-8 md:p-12 max-w-4xl">
@@ -18,7 +34,7 @@ export default function Home() {
               Responsive Design
             </h2>
             <p className="text-gray-400 text-sm">
-currently {_projects.length} projects are tracked on this site, with more to come as I continue to develop and refine my portfolio.
+              currently {activeProjects.length} projects are tracked on this site, with more to come as I continue to develop and refine my portfolio.
 
             </p>
           </div>
