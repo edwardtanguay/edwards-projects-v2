@@ -10,6 +10,7 @@ import {
 	Menu,
 	CalendarFold,
 	Cog,
+	SquareCheck,
 	X,
 } from "lucide-react";
 
@@ -24,6 +25,7 @@ const navItems: NavItem[] = [
 	{ label: "Active Projects", href: "/active-projects", icon: <Activity size={20} /> },
 	{ label: "Current Tasks", href: "/current-tasks", icon: <Cog size={20} /> },
 	{ label: "Upcoming Tasks", href: "/upcoming-tasks", icon: <CalendarFold size={20} /> },
+	{ label: "Finished Tasks", href: "/finished-tasks", icon: <SquareCheck size={20} /> },
 	{ label: "About", href: "/about", icon: <Info size={20} /> },
 ];
 
