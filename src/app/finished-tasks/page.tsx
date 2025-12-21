@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 export default function Company() {
 	return (
 		<div className="p-8 md:p-12 max-w-4xl">
