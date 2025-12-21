@@ -34,7 +34,7 @@ export default function Task({ task }: { task: TaskData }) {
 						</p>
 					)}
 					{task.stage === "finished" && task.endDateTime && (
-						<p className="text-sm bg-black text-gray-300 flex items-center gap-2">
+						<p className="text-sm bg-black text-gray-300 flex items-center gap-2 px-3 py-1 rounded-md">
 							<Check className="w-4 h-4 text-emerald-500" />
 							<span>
 								Finished on{" "}
