@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import tasks from "../../../parseddata/tasks.json";
+import Task from "../../components/Task";
 
 const currentTasks = [
 	...tasks.filter((task) => task.stage === "current"),
@@ -15,47 +16,14 @@ export default function Company() {
 						Current Tasks
 					</h1>
 					<p className="text-lg text-gray-300 leading-relaxed">
-						I'm currently working on the following tasks from various 
+						I'm currently working on the following tasks from various
 						software projects.
 					</p>
 				</div>
 
 				<div className="space-y-4">
 					{currentTasks.map((task) => (
-						<div
-							key={task.suuid}
-							className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-4 hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20 transition"
-						>
-							<h2 className="text-xl font-semibold text-blue-100 mb-3">
-								{task.title}
-							</h2>
-							<div className="flex justify-between items-end gap-3">
-								<div className="flex flex-col gap-1">
-									<p className="text-sm text-gray-300">
-										Project:{" "}
-										<span className="text-purple-300 font-medium">
-											{task.projectIdCode}
-										</span>
-									</p>
-									{task.beginDateTime && (
-										<p className="text-sm text-gray-300">
-											Started on{" "}
-											<span className="text-emerald-300 font-medium">
-												{new Date(
-													task.beginDateTime
-												).toLocaleDateString("en-US", {
-													month: "short",
-													day: "numeric",
-												})}
-											</span>
-										</p>
-									)}
-								</div>
-								<span className="inline-block px-2 py-1 text-xs font-medium bg-blue-950 text-blue-200 border-l-2 border-blue-400">
-									{task.kind}
-								</span>
-							</div>
-						</div>
+						<Task key={task.suuid} task={task} />
 					))}
 				</div>
 			</div>
