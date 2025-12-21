@@ -1,18 +1,18 @@
 [
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "746Tfn",
+		"suuid": "J3pqci",
 		"stage": "current",
 		"kind": "feature",
 		"title": "Upgrade to modern site layout",
-		"beginDateTime": "2025-12-02 22:48:41",
+		"beginDateTime": "2025-12-20 22:48:41",
 		"endDateTime": "",
 		"branch": "feature-new-layout",
 		"rank": 4.9
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "Neh8A1",
+		"suuid": "trqW3O",
 		"stage": "upcoming",
 		"kind": "dev",
 		"title": "Clean up mode and status",
@@ -23,7 +23,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "97ly2T",
+		"suuid": "pbL0JY",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Display descriptions on e.g. starts, showcases (what they are)",
@@ -34,7 +34,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "CRXsEL",
+		"suuid": "C5Gwbj",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Enable link to branch",
@@ -45,7 +45,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "afsVav",
+		"suuid": "jD7jua",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Enable link to commit to be saved",
@@ -56,7 +56,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "PpHMqO",
+		"suuid": "Mv3QDi",
 		"stage": "upcoming",
 		"kind": "content",
 		"title": "Add rest of projects",
@@ -67,7 +67,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "NgcMo2",
+		"suuid": "lABJJL",
 		"stage": "upcoming",
 		"kind": "featuer",
 		"title": "Implement global search",
@@ -78,7 +78,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "OXRH0R",
+		"suuid": "JNgW2Z",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Make single project view with permalink",
@@ -89,7 +89,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "PPdW8V",
+		"suuid": "UnEKgO",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Make dummy data for repository",
@@ -100,7 +100,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "Wl8goe",
+		"suuid": "XUS64t",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create \"npm run audit\" to find all missing information",
@@ -111,7 +111,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "yz2Egz",
+		"suuid": "vV3Et3",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Add rank to tasks and sort more important first",
@@ -122,7 +122,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "gcBihq",
+		"suuid": "c7GndD",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Show three of each kind of tasks: current, upcoming, finished",
@@ -133,7 +133,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "wuxwNX",
+		"suuid": "UtOTO1",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Process and display all tasks basic data",
@@ -144,7 +144,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "0fJos5",
+		"suuid": "GuBnBy",
 		"stage": "finished",
 		"kind": "base",
 		"title": "Create minimal site and put online",
@@ -155,7 +155,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "aTTIwu",
+		"suuid": "rtipKk",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Enable second file to be processed and combine projects",
@@ -166,7 +166,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "AWLq4E",
+		"suuid": "Ht71da",
 		"stage": "finished",
 		"kind": "decision",
 		"title": "Decide on best name \"start\" or \"starter\"",
@@ -177,7 +177,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "mOTwuJ",
+		"suuid": "Dl5WwA",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Show start sites",
@@ -188,7 +188,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "D2hPPU",
+		"suuid": "yEmdsM",
 		"stage": "finished",
 		"kind": "content",
 		"title": "Add showcase-typo3",
@@ -199,7 +199,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "N0fi3G",
+		"suuid": "ENfGWI",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Create all current images",
@@ -210,7 +210,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "LfCIh8",
+		"suuid": "H2sYGj",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Show image if exists",
@@ -221,7 +221,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "1iigIz",
+		"suuid": "cdskYl",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Make Responsive",
@@ -232,7 +232,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "W9dous",
+		"suuid": "M86iSv",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Implement categories",
@@ -243,7 +243,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "m7LDQW",
+		"suuid": "E8Uhmy",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Create active, planning and stable project sections",
@@ -254,7 +254,7 @@
 	},
 	{
 		"projectIdCode": "edwards-projects",
-		"suuid": "aMpT4I",
+		"suuid": "oILzR4",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Process first data file, list frontend idcodes",
@@ -265,7 +265,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "DZb7Xl",
+		"suuid": "vpCwE6",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create page to practice pronunciation",
@@ -276,7 +276,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "v3930Y",
+		"suuid": "JZi1ZS",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Speed up parsing",
@@ -287,7 +287,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "rhC0jJ",
+		"suuid": "rjetdP",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Integrate pronuncation items into story creation",
@@ -298,7 +298,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "1Nuvnt",
+		"suuid": "H8Cgkg",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Integrate random standard practice into story creation",
@@ -309,7 +309,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "qZcURm",
+		"suuid": "Qrz6HA",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Upgrade to modern design",
@@ -320,7 +320,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "YIgRpT",
+		"suuid": "ypSSLC",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Make basic frontend for creation process",
@@ -331,7 +331,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "h83Pmu",
+		"suuid": "pYatfE",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Enable simple and basic stories for weak languages",
@@ -342,7 +342,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "kj1G7m",
+		"suuid": "UWFatY",
 		"stage": "upcoming",
 		"kind": "fix",
 		"title": "Resolve the first letter issue in the French text data file",
@@ -353,7 +353,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "i67EZS",
+		"suuid": "M8JHze",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create pronunciation quiz",
@@ -364,7 +364,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "aDgWHN",
+		"suuid": "ngKIrV",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Make -ere past participle quiz for Italian",
@@ -375,7 +375,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "bwbSWS",
+		"suuid": "WDeGvP",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create fill-in-blank quiz",
@@ -386,7 +386,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "VCNwhc",
+		"suuid": "bvDncZ",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create Italian past tense quiz",
@@ -397,7 +397,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "2j22jP",
+		"suuid": "1jA9AM",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create CLI command to copy latest files for each language to MP3 stick",
@@ -408,7 +408,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "hSJrl5",
+		"suuid": "mkSIGZ",
 		"stage": "upcoming",
 		"kind": "dev",
 		"title": "Update readme",
@@ -419,7 +419,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "K641p5",
+		"suuid": "t0Lbmt",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create CLI command that automates process of creating a text from the google spreadsheet",
@@ -430,7 +430,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "6LuIqh",
+		"suuid": "E2KXRf",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "Create page for pronunciation notes",
@@ -441,7 +441,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "rCWgBp",
+		"suuid": "PEcEIq",
 		"stage": "upcoming",
 		"kind": "feature",
 		"title": "update to newest datapod-for-go version (qtools etc.)",
@@ -452,7 +452,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "zxszmw",
+		"suuid": "XgKSMZ",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Streamline story creation",
@@ -463,7 +463,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "aHZ9mD",
+		"suuid": "TERxlN",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Order import listing by number of phrases",
@@ -474,7 +474,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "X41glZ",
+		"suuid": "ipKcsI",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Use most recent phrases first",
@@ -485,7 +485,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "rVKQvc",
+		"suuid": "teGVkJ",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "CLI command \"cpf\" creates prompt files for all languages",
@@ -496,7 +496,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "p9vVbE",
+		"suuid": "azZu9b",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Enable 10 100 to be sent as params, with defaults if not sent",
@@ -507,7 +507,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "7pOb3f",
+		"suuid": "FELk8G",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "For command npm run cpg fr, randomize order of phrases",
@@ -518,7 +518,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "D8PgPr",
+		"suuid": "3MLAzb",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Show history of phrases for \"cpf\"",
@@ -529,7 +529,7 @@
 	},
 	{
 		"projectIdCode": "comprehensible-output",
-		"suuid": "MYrEVn",
+		"suuid": "d0M4h4",
 		"stage": "finished",
 		"kind": "feature",
 		"title": "Implement script to create prompts from google translate phrases",
