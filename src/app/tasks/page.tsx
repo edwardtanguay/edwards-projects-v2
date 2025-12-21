@@ -1,3 +1,21 @@
+import _projects from "../../../parseddata/projects.json";
+
+const activeProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "active")
+);
+const upcomingProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "upcoming")
+);
+const liveProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "live")
+);
+const showcaseProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "showcase")
+);
+const startProjects = _projects.filter((project) =>
+  project.categories.some((category) => category.idCode === "start")
+);
+
 export default function Company() {
 	return (
 		<div className="p-8 md:p-12 max-w-4xl">
@@ -7,58 +25,43 @@ export default function Company() {
 						Tasks
 					</h1>
 					<p className="text-lg text-gray-400 leading-relaxed">
-						Learn more about our company and our mission.
+					This is the status of tasks from all my software projects.
 					</p>
 				</div>
 
 				<div className="space-y-6">
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-							Our Story
+						Active Projects
 						</h2>
-						<p className="text-gray-400 leading-relaxed">
-							We are a forward-thinking company dedicated to
-							delivering excellence in everything we do. Our
-							journey began with a simple vision: to create
-							meaningful solutions that make a difference.
-						</p>
+						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-							Our Mission
+						Upcoming Projects
 						</h2>
-						<p className="text-gray-400 leading-relaxed">
-							Our mission is to provide exceptional value to our
-							clients while maintaining the highest standards of
-							quality and integrity. We believe in building
-							lasting relationships based on trust and mutual
-							respect.
-						</p>
+						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 
 					<section>
 						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
-							Our Values
+						Live and in Production
 						</h2>
-						<ul className="space-y-2 text-gray-400">
-							<li className="flex gap-2">
-								<span className="text-gray-400">•</span>
-								<span>Commitment to excellence</span>
-							</li>
-							<li className="flex gap-2">
-								<span className="text-gray-400">•</span>
-								<span>Innovation and creativity</span>
-							</li>
-							<li className="flex gap-2">
-								<span className="text-gray-400">•</span>
-								<span>Integrity and transparency</span>
-							</li>
-							<li className="flex gap-2">
-								<span className="text-gray-400">•</span>
-								<span>Customer-centric approach</span>
-							</li>
-						</ul>
+						<p className="text-gray-400 leading-relaxed">test</p>
+					</section>
+					
+					<section>
+						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
+						Showcases
+						</h2>
+						<p className="text-gray-400 leading-relaxed">test</p>
+					</section>
+					<section>
+						<h2 className="text-2xl font-semibold text-gray-100 mb-3">
+						Starts
+						</h2>
+						<p className="text-gray-400 leading-relaxed">test</p>
 					</section>
 				</div>
 			</div>
