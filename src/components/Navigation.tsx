@@ -23,7 +23,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "/", icon: <Home size={20} /> },
+  { label: "Projects", href: "/", icon: <Home size={20} /> },
   { label: "About", href: "/about", icon: <Info size={20} /> },
   { label: "Company", href: "/company", icon: <Building size={20} /> },
   { label: "Services", href: "/services", icon: <Briefcase size={20} /> },
