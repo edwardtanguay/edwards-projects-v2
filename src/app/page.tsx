@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import _projects from "../../parseddata/projects.json";
+import Project from "../components/Project";
 
 const activeProjects = _projects.filter((project) =>
   project.categories.some((category) => category.idCode === "active")
@@ -30,15 +31,7 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {activeProjects.map((project) => (
-            <div
-              key={project.suuid ?? project.idCode}
-              className="bg-gray-900 border border-gray-800 rounded-lg p-6"
-            >
-              <h2 className="text-lg font-semibold text-gray-100 mb-2">
-                {project.title}
-              </h2>
-              <p className="text-gray-400 text-sm">{project.status}</p>
-            </div>
+            <Project key={project.suuid ?? project.idCode} project={project} />
           ))}
         </div>
 
